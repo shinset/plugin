@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="https://demo.smartadserver.com/shared/smart/tcj/video/style.css" />
+    
+    <title> Video Plugin ADRULE Format LONG </title> 
+    
+
+    <!-- OneTrust CMP Builder start src: https://comply.cookiepro.com/  -->
+    <script src="https://cmp-cdn.cookielaw.org/scripttemplates/otSDKStub.js" type="text/javascript" charset="UTF-8"
+        data-cmp-builder-version="1.8.0" data-domain-script="center-center-default-eu-ot"></script>
+    <script>function OptanonWrapper() { addCmpBuilderFeatures(); function addCmpBuilderFeatures() { var existingCmpFeaturesScript = document.getElementById('cmp-builder-features-script'); if (!existingCmpFeaturesScript) { var cmpFeaturesScript = document.createElement('script'), script1 = document.getElementsByTagName('script')[0]; cmpFeaturesScript.src = "https://cmp-cdn.cookielaw.org/consent/cmp-features/cmp-features.js"; cmpFeaturesScript.setAttribute('id', 'cmp-builder-features-script'); cmpFeaturesScript.async = false; cmpFeaturesScript.type = 'text/javascript'; script1.parentNode.insertBefore(cmpFeaturesScript, script1); } } }</script>
+    <!-- OneTrust CMP Builder end -->
+
+
+
+<script type="application/javascript" src="https://ced.sascdn.com/tag/8/smart.js" async></script>
+<script type="application/javascript">
+    var sas = sas || {};
+    sas.cmd = sas.cmd || [];
+    sas.cmd.push(function() {
+        sas.setup({ networkid: 8, domain: "https://www.smartadserver.com", async: true });
+    });
+    sas.cmd.push(function() {
+        sas.call("onecall", {
+            siteId: 339677,
+            pageId: 1740603,
+            formats: [
+                 { id: 72680 }
+                ,{ id: 85491 }
+                ,{ id: 96641 }
+                ,{ id: 70210 }
+                ,{ id: 70211 }
+                ,{ id: 85378 }
+                ,{ id: 72679 }
+                ,{ id: 87841 }
+                ,{ id: 29827 }
+                ,{ id: 29828 }
+            ],
+            target: ''
+        });
+    });
+</script>
+
+
+
+
+    <!--  VIDEOJS player Import via CDN ressource to avoid local install-->
+
+    <script src="https://vjs.zencdn.net/7.7.5/video.js"></script> <!-- videojs lib  -->
+
+    <link href="https://vjs.zencdn.net/7.7.5/video-js.css" rel="stylesheet" />     <!-- video js js base css -->
+
+    <link href="https://unpkg.com/@videojs/themes@1/dist/sea/index.css" rel="stylesheet"> <!-- video js theme Sea -->
+
+
+    <!-- !!! NOT USED for this page  !!! Import videojs-vast-vpaid plugin for videojs player via CDN ressource to avoid local install 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/videojs-vast-vpaid/2.0.2/videojs_5.vast.vpaid.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/videojs-vast-vpaid/2.0.2/videojs.vast.vpaid.css" />
+ -->
+
+
+    <!-- import smart plugin , you can enable verbose mode in your browser console by appending "&verbose=true" to the controller url -->
+    <script type="text/javascript" src="https://r.sascdn.com/video/config.js?nwid=8"></script>
+
+    <script type="text/javascript" src="https://r.sascdn.com/video/controller.js?nwid=8&verbose=true"></script>
+
+
+</head>
+
+<body>
+    <header>
+
+
+    </header>
+    <nav>
+        <h1>  Video Plugin ADRULE Format  Long </h1>
+    </nav>
+
+    <div class="box">
+        <br>
+
+        <h2> Video Plugin ADRULE Format  Long</h2>
+        
+        <br>
+        <ul>
+            <li>content duration: 888 sec (14,8min)</li>
+            <li>SSAR ADrules  2 preroll / 3 midrolls / timecode + 10sec </li>
+      
+          
+        </ul>
+
+    </div>
+
+    <div class="box">
+        <H2> SINTEL The Movie</H2>
+        
+
+        <!-- Here is the videojs player default setup passing the vast vpaid plugin in the data setup object as argument -->
+        <div id="vid">
+            <video id="my-video" class="video-js vjs-theme-sea" controls preload="auto" width="618" height="347"
+                poster="https://smartadserver.fr/content/uploads/2019/05/image-mise-en-avant-home.png" data-setup=' {}'>
+
+                <!-- Disabling the vast/vpaid plugin here since we are usins smart video plugin
+ a remettre dans l objet data setup pour utiliser le plugin videojs vast vpaid
+"plugins": {
+      "vastClient": {
+        "adTagUrl": "https://www.smartadserver.com/ac?siteid=339677&pgid=1223982&fmtid=29827&ab=1&tgt=&oc=1&out=vast3&ps=1&pb=0&visit=S&vcn=s&tmstp=[timestamp]",
+        "adCancelTimeout": 5000,
+        "adsEnabled": true
+        }
+      }
+    -->
+
+                <!-- publisher video content  source here -->
+
+                <source src="https://skynewsau-live.akamaized.net/hls/live/2002689/skynewsau-extra1/master.m3u8?ref=developerinsider.com"  type='application/x-mpegURL'/> 
+                    <!--  RMB HLS SAMPLE-->
+
+                <!-- <source src="https://demo.smartadserver.com/shared/smart/tcj/video/creaintervid.mp4" 
+
+                <!-- <source src="https://demo.smartadserver.com/shared/smart/tcj/video/sintel-low.mp4" type='video/webm'/> MP4 sample -->
+
+                <p class="vjs-no-js">
+                    To view this video please enable JavaScript, and consider upgrading to a
+                    web browser that
+                    <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+                </p>
+            </video>
+
+            <!-- Smart plugin config start here note that it must be placed  AFTER the content video player itself -->
+            <script>
+                var sasVideoData = {
+
+
+
+                    id: 'vid', // declare the video player  parent div id to target
+
+                    adData: { // declare placement and targeting
+                                  <!-- Smart plugin config start here note that it must be placed  AFTER the content video player itself -->
+                      
+                      
+                        sas_siteid: '339677',
+                        sas_pageid: '1223982',
+                        sas_format_linears: '29827',
+                        sas_format_overlays: '29828',
+                        sas_target: ''
+                      
+                    },
+
+                    
+                    configuration: {   //configure publisher settings doc here http://documentation.smartadserver.com/video/configuration/adpluginconfiguration.html#publisher
+                      
+            publisher: {
+
+                "schain": "1.0,1!exchange1.com,1234,1,publisher,publisher.com", //pass schain parameter 
+                
+                "enableSSAR": true, // define if use SSAR on manage  
+                
+                "html5SeamlessFullscreen": true, // mandatory for midroll 
+
+                "enableAdPauseOnWindowChange": false,  // autopause on windows changes 
+                
+                "muteAdsAtStartup": false, // preroll option only
+                
+                "unmuteOnMouseOver": false, 
+
+                "loadHlsJsLibrary": true, 
+                	
+                //below parameter define the bumper ( abreak start /end annoucement) which is mandatory in some countries like belgium) 
+           //     "bumperDuration": 3,  // in second
+                
+             //   "bumperPreAdUrl": 'https://c.tenor.com/7JOtQpbfSvoAAAAd/anarchy-ads.gif', //image only
+                
+             //   "bumperPostAdUrl": 'https://c.tenor.com/Rfyx9OkRI38AAAAC/netflix-netflix-startup.gif' //image only
+
+
+            }
+    },
+            
+       
+
+
+                    adRules: [
+                      
+                      
+                      
+                                            { 
+                        "duration_min": 0,
+                        "duration_max": 130,
+                        "data": {
+           
+                            "midrolls": {
+                               "instances": 1,
+                              "percents": [50]
+                 
+
+
+                            }
+                        }
+                    },
+                      
+                      
+                      { 
+                        "duration_min": 800,
+                            "duration_max": 900,                
+
+                        "data": {
+               
+                            "midrolls": {
+                               "instances": 1,
+                                    "timecodes": ['00:00:10','00:00:20', '00:00:30','00:00:40']
+
+                 
+
+
+                            }
+                        }
+                    }
+                             
+                             
+                             
+                             
+                             ]
+                };
+
+                sas.video.register(sasVideoData); // dont forget to register the config 
+
+
+            </script>
+        </div>
+    </div>
+
+  
+  
+    <div class="box projects">
+        <h2>companions</h2>
+        <section class="images">
+      
+          
+          <div id="comp1"></div>
+           <div id="comp2"></div>
+  <div id="comp3"></div>
+            <div id="comp4"></div>
+            <div id="comp5"></div>
+          
+        </section>
+
+
+
+       
+    </div>
+  
+
+    <div class="box projects">
+        <h2>About Sintel</h2>
+        <section class="images">
+      
+          
+          <div id="sas_87841"></div>
+<script type="application/javascript">
+    sas.cmd.push(function() {
+        sas.render("87841");  // Format : tcj_2020 320x240
+    });
+</script>
+          
+        </section>
+
+        <p>
+            Sintel, one of the three short animated films of Blender Institute, is the story of a girl called Sintel who is searching for her dragon friend Scales. The movie has been praised internationally for showcasing the power and versatility of Blender 3D suit and truly is the quintessential open source movie that is produced until today. Ironically enough, the producers have been able to incorporate a strong storyline in this short 13 minute film. All the 12 GB of production files including blender modeling, artworks and scores are available on a 4 DVD package.
+        </p>
+
+       
+    </div>
+</body>
+
+</html>
